@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --putih-abu: #F7F2FF;
+  --smoky-black: #0E0903;
+  --nigga-gray: #282828;
+  --gold: #FFCF01;
+  --nigga-sangat: #141414;
+  --putih-tt: #f2f2f2;
+  --merah-menyala: #ff3a08;
+  --hijau-stabilo: #D2E603;
+  --biru-menyala: #03AEC6;
+  --biru-nigga: #01294D;
+  --putih-peju: #F1EFEF;
+}
+
+body {
+  background-color: var(--putih-peju);
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .header-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: var(--smoky-black);
+    background-color: var(--putih-abu);
+  }
+  
+  .header-title h1{
+    font-family: "Poppins", Sans-Serif;
+    font-size: 1rem;
+  }
+  
+  #close{
+    display: none;
+  }
+  
+  .header-title i{
+    font-size: 1.3rem;
+    margin-top: 13px;
+    
+  }
+  
+  .header-isi {
+    font-size: 1.3rem;
+    position: fixed;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    background-color: var(--nigga-gray);
+    display: none;
+  }
+  
+  .header-isi navbar{
+    
+  }
+  
+  .header-isi ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .header-isi li{
+    
+    
+    padding:  10px 50px;
+    
+  }
+  
+  .header-isi a{
+    text-decoration: none;
+    font-family: "Poppins", Sans-Serif;
+    color: var(--putih-peju);
+  }
+  
+  .header-isi a:hover{
+    color: var(--biru-menyala);
+    text-decoration: underline;
+  }
+  
+  .web-isi {
+    font-family: "Poppins", Sans-Serif;
+    padding: 0 15px;
+    color: var(--nigga-gray);
+  }
+  
+  .br {
+    color: var(--merah-menyala);
+  }
+  
+  .btn {
+    padding-bottom: 50px;
+  }
+  
+  .btn button{
+    border-radius: 5px;
+    padding: 10px 30px; 
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+
+  }
+  
+  .btn1 {
+    background-color: var(--nigga-gray);
+    color: var(--putih-abu);
+    border: 1px solid gray;
+  }
+  
+  .btn2 {
+    background-color: var(--merah-menyala);
+    color: var(--putih-abu);
+    border: 1px solid gray;
+  }
+  
+  .btn2:hover {
+    background-color: var(--nigga-gray);
+    border: 1px solid var(--merah-menyala);
+  }
+  
+  
+  .footer-title {
+    background-color: var(--putih-abu);
+    padding: 10px;
+  }
+  
+  .footer-title h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    color: gray;
+    text-align: center;
+  }
+  
+  .no-scroll {
+      overflow: hidden; 
+    }
+  
+  
+  
+  
+  .onlyandroid {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1024px){
+  .container {
+    display: none;
+  }
+  
+  .onlyandroid {
+    display: block;
+    color: var(--merah-menyala);
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:767px) and (max-width:1023px) {
+  
+  .container {
+    display: none;
+  }
+  
+  .onlyandroid {
+    display: block;
+    color: var(--merah-menyala);
+    text-align: center;
+  }
+  
+}
